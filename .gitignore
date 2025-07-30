@@ -8,9 +8,11 @@ figures
 _main.*
 crc
 
+
 # History files
 .Rhistory
 .Rapp.history
+
 
 # Session Data files
 .RDataTmp
@@ -18,6 +20,7 @@ crc
 # User-specific files
 .Ruserdata
 *.tobedeleted
+
 
 # Example code in package build process
 *-Ex.R
@@ -36,12 +39,14 @@ crc
 
 # knitr and R markdown default cache directories
 *_cache/      # knitr-style: document_cache/
-_cache/       # Some tools use exactly _cache/
+*cache/       # Some tools use exactly *cache/
 /cache/       # Root cache directory
+
 
 # Temporary files created by R markdown
 *.utf8.md
 *.knit.md
+
 
 # R Environment Variables
 .Renviron
@@ -72,7 +77,6 @@ packrat/
 # Logs
 *.log
 
-
 # Large temporary data files
 temp-*.rds
 temp-*.RDS
@@ -91,7 +95,6 @@ Rplots.pdf
 # macOS
 .DS_Store
 
-
 # Windows
 Thumbs.db
 
@@ -99,14 +102,7 @@ Thumbs.db
 /.quarto/
 _freeze/
 
-
 # Rendered output (be selective)
 *.html
-write("\n# Allow specific html file\n!header.html",
-      file = ".gitignore",
-      append = TRUE)
-!header.html       # Excepton - let this one through to repo
+!header.html       # Exception - let this one through to repo
 !vignettes/*.html  # Exception - keep vignette HTML
-.Rproj.user
-.quarto
-
