@@ -1,0 +1,4 @@
+name: Xaringan Skeleton bg-black
+description: >
+   Creates and Maintains a Xaringan skeleton RMarkdown Template with Black Slide Backgrounds and 
+create_dir: TRUE
